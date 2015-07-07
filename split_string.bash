@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+IFS=
 # http://stackoverflow.com/a/246128/6554
 SOURCE="${BASH_SOURCE[0]}"
 # resolve $SOURCE until the file is no longer a symlink
