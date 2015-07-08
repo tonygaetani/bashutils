@@ -26,5 +26,5 @@ for file in "${FILES[@]}"
 do
 	FILE_NO_EXT=$(basename "${file}")
 	FILE_NO_EXT="${FILE_NO_EXT%.*}"
-	sudo ln -sf "$(pwd)/$(basename ${file})" "/usr/bin/${FILE_NO_EXT}"
+	ln -sf "$(pwd)/$(basename ${file})" "/usr/local/bin/${FILE_NO_EXT}"
 done

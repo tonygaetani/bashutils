@@ -12,7 +12,7 @@ This is the template I use when creating bash scripts
 install.bash
 ------------
 Creates symlinks for all bash scripts (*.bash) in this directory except for 
-template.bash and install.bash to /usr/bin with the .bash extension removed
+template.bash and install.bash to /usr/local/bin with the .bash extension removed
 
 Exit:
  - 0: success
