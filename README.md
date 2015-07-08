@@ -9,6 +9,21 @@ Bash 'strict mode' http://redsymbol.net/articles/unofficial-bash-strict-mode/
 Script location resolving
 This is the template I use when creating bash scripts
 
+bash_template.bash
+------------------
+Copies template.bash to a new file
+
+Input:
+ - Path to a new file that will receive the template
+
+Environment:
+ - BASHUTILS_DIR: the location of bashutils, including the template
+  - Defaults to the resolved actual location of the script being called
+
+Exit:
+ - 0: success
+ - Non-0: failure
+
 split_string.bash
 -----------------
 Splits a string on to separate lines. Useful for creating arrays in bash.
@@ -25,3 +40,7 @@ Environment:
  - SPLIT_CHAR: the IFS used while reading input
   - Defaults to ', '
   - Can be overridden in environment
+
+Exit:
+ - 0: success
+ - Non-0: failure
