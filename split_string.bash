@@ -16,7 +16,6 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 IFS=$'\n\t'
 
-
 if [[ -z "${SPLIT_CHAR-}" ]]; then
 	SPLIT_CHAR=", "
 fi
