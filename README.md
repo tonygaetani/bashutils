@@ -18,7 +18,7 @@ Exit:
  - 0: success
  - Non-0: failure
 
-bash_template.bash
+bash-template.bash
 ------------------
 Copies template.bash to a new file
 
@@ -33,7 +33,7 @@ Exit:
  - 0: success
  - Non-0: failure
 
-split_string.bash
+split-string.bash
 -----------------
 Splits a string on to separate lines. Useful for creating arrays in bash.
 
