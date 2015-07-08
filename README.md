@@ -9,6 +9,15 @@ Bash 'strict mode' http://redsymbol.net/articles/unofficial-bash-strict-mode/
 Script location resolving
 This is the template I use when creating bash scripts
 
+install.bash
+------------
+Creates symlinks for all bash scripts (*.bash) in this directory except for 
+template.bash and install.bash to /usr/bin with the .bash extension removed
+
+Exit:
+ - 0: success
+ - Non-0: failure
+
 bash_template.bash
 ------------------
 Copies template.bash to a new file
