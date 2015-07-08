@@ -21,7 +21,10 @@ if [[ -z "${SPLIT_CHAR-}" ]]; then
 fi
 
 IFS="${SPLIT_CHAR}"
-for line in $(cat "${1:-/dev/stdin}");
-do
-	echo "${line}"
-done
+
+# MUST return non-zero on cat subshell failure
+trap 'exit 1' EXIT
+INPUT=($(cat "${1:-/dev/stdin}"))
+trap - EXIT
+
+echo "${INPUT[@]}"
