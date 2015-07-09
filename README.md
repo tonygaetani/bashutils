@@ -68,3 +68,14 @@ Exit:
  - Non-0: failure
  - 100+: known failure
  - 100: max value is not a number
+
+isodate.bash
+------------------
+Generates an ISO 8601 timestamp
+
+Output:
+ - an ISO 8601 timestamp
+
+Exit:
+ - 0: success
+ - Non-0: failure
