@@ -32,6 +32,8 @@ Environment:
 Exit:
  - 0: success
  - Non-0: failure
+ - 100+: known failure
+ - 100: missing parameter
 
 split-string.bash
 -----------------

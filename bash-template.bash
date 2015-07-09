@@ -18,8 +18,8 @@ IFS=$'\n\t'
 
 if [[ -z "${1-}" ]]; then
 	echo "usage:" >&2
-	echo "BASHUTILS_DIR=/path/to/bashutils bash_template file ..." >&2
-	exit 1
+	echo "BASHUTILS_DIR=/path/to/bashutils bash-template file ..." >&2
+	exit 100
 fi
 
 # make sure parent folder exists, if any
