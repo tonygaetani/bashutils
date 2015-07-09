@@ -16,7 +16,7 @@ template.bash and install.bash to /usr/local/bin with the .bash extension remove
 
 Exit:
  - 0: success
- - Non-0: failure
+ - non-0: failure
 
 bash-template.bash
 ------------------
@@ -55,3 +55,16 @@ Environment:
 Exit:
  - 0: success
  - Non-0: failure
+
+rand.bash
+------------------
+Generates a random number from 1-100
+
+Input:
+ - 1st argument: max value (100 is used by default)
+
+Exit:
+ - 0: success
+ - Non-0: failure
+ - 100+: known failure
+ - 100: max value is not a number
