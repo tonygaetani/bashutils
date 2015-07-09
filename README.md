@@ -63,6 +63,9 @@ Generates a random number from 1-100
 Input:
  - 1st argument: max value (100 is used by default)
 
+Output:
+ - A pseudo-random number using bash's RANDOM
+
 Exit:
  - 0: success
  - Non-0: failure
