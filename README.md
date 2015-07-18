@@ -14,6 +14,11 @@ install.bash
 Creates symlinks for all bash scripts (*.bash) in this directory except for 
 template.bash and install.bash to /usr/local/bin with the .bash extension removed
 
+ usage: ./install.bash [help]
+
+Environment:
+ - DEBUG: set to preserve stdout/err
+ - DESTINATION: path to install symlink (/usr/local/bin)
 Exit:
  - 0: success
  - non-0: failure
