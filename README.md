@@ -82,3 +82,11 @@ Output:
 Exit:
  - 0: success
  - Non-0: failure
+
+brew-install.bash
+------------------
+Carefully and interactively installs homebrew (http://brew.sh)
+
+Exit:
+ - 0: success
+
