@@ -95,3 +95,22 @@ Carefully and interactively installs homebrew (http://brew.sh)
 Exit:
  - 0: success
 
+alarm.bash
+----------
+Plays an mp3 file /usr/local/share/alarms/current.mp3 after n seconds.
+The user is expected to keyboard interrupt to cancel the alarm.
+
+Requirements:
+ SoX, or an alternative program named 'play' that accepts an mp3 file as a parameter and plays it.
+ ```brew install sox```
+
+Parameters:
+ 1: minimum guaranteed number of seconds to wait
+
+Exit:
+ - Non-0: failure
+ - 100+: known failure
+ - 100: missing parameter
+ - 101: parameter invalid (must be integer)
+ - 102: current alarm file missing
+
