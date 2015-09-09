@@ -129,3 +129,15 @@ Exit:
  - Non-0: failure
  - 100+: known failure
  - 100: missing PASSWORD in environment
+
+git-switch-user.bash
+-----------
+runs git config --global user.name and user.email
+
+Environment:
+NAME - required
+EMAIL - required
+
+Exit:
+ - 0: success
+ - Non-0: failure
