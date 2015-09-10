@@ -32,3 +32,4 @@ if [[ -z "${BASHUTILS_DIR-}" ]]; then
 fi
 
 cat "${BASHUTILS_DIR}/template.bash" > "${1}"
+chmod +x "${1}"

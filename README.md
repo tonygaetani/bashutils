@@ -8,6 +8,7 @@ template.bash
 Bash 'strict mode' http://redsymbol.net/articles/unofficial-bash-strict-mode/
 Script location resolving
 This is the template I use when creating bash scripts
+The script that is output is marked as executable by everyone
 
 install.bash
 ------------
