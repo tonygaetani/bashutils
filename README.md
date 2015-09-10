@@ -141,3 +141,11 @@ EMAIL - required
 Exit:
  - 0: success
  - Non-0: failure
+
+nproc.bash
+-----------
+reports the number of processors to stdout (according to sysctl)
+
+Exit:
+ - 0: success
+ - Non-0: failure
