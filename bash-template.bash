@@ -22,6 +22,11 @@ if [[ -z "${1-}" ]]; then
 	exit 100
 fi
 
+# make sure file does not already exists
+if [[ -f "${1-}" ]]; then
+    exit 101
+fi
+
 # make sure parent folder exists, if any
 if [[ "${1}" = */* ]]; then
 	stat $(dirname "${1}")

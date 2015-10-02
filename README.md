@@ -40,6 +40,7 @@ Exit:
  - Non-0: failure
  - 100+: known failure
  - 100: missing parameter
+ - 101: file already exists
 
 split-string.bash
 -----------------
