@@ -116,24 +116,8 @@ Exit:
  - 101: parameter invalid (must be integer)
  - 102: current alarm file missing
 
-bcrypt.bash
------------
-Outputs a bcrypt hash with salt of length 10
-
-Environment:
-PASSWORD - required
-
-Output:
- - a bcrypt hash
-
-Exit:
- - 0: success
- - Non-0: failure
- - 100+: known failure
- - 100: missing PASSWORD in environment
-
 git-switch-user.bash
------------
+--------------------
 runs git config --global user.name and user.email
 
 Environment:
