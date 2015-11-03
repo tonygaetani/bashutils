@@ -135,3 +135,17 @@ reports the number of processors to stdout (according to sysctl)
 Exit:
  - 0: success
  - Non-0: failure
+
+bcrypt.bash
+-----------
+creates a bcrypt hash intended to be used as a password
+uses python bcrypt module
+uses python getpass module
+
+password on tty at runtime
+
+TODO: accept password in environment and stdin
+
+Exit:
+ - 0: success
+ - Non-0: failure
