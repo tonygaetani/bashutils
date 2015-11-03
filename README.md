@@ -144,7 +144,13 @@ uses python getpass module
 
 password on tty at runtime
 
-TODO: accept password in environment and stdin
+TODO
+
+bcrypt prefix should be configurable (currently b'2a')
+
+salt rounds should be configurable
+
+accept password in environment and stdin
 
 Exit:
  - 0: success
